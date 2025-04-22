@@ -1,0 +1,10 @@
+name = "lab-protese"
+compatibility_date = "2023-12-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lab-protese-db"
+database_id = "lab-protese-db"
+
+[site]
+bucket = "./public"
