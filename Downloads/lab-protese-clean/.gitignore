@@ -47,3 +47,10 @@ yarn-error.log*
 
 # Arquivos específicos do Cloudflare
 .wrangler/
+
+# Arquivos de banco de dados
+*.sqlite
+*.sqlite.backup-*
+
+# Dependência específica para deploy
+/better-sqlite3-temp
