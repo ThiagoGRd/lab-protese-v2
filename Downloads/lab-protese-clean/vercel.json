@@ -1,11 +1,16 @@
 {
-  "builds": [
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "regions": ["sfo1"],
+  "crons": [
     {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "installCommand": "npm install --legacy-peer-deps"
-      }
+      "path": "/api/maintenance/update-status",
+      "schedule": "0 0 * * *"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
