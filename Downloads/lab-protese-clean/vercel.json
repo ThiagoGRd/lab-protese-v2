@@ -1,9 +1,8 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install --legacy-peer-deps",
+  "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
-  "regions": ["sfo1"],
+  "regions": ["iad1"],
   "crons": [
     {
       "path": "/api/maintenance/update-status",
